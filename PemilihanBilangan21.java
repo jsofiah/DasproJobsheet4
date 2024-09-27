@@ -8,12 +8,16 @@ import java.util.Scanner;
         Scanner bilangan = new Scanner(System.in);
         System.out.print("Masukkan sebuah angka: ");
         int angka = bilangan.nextInt();
+        String penentu_bilangan;
 
-        if (angka % 2 ==0){
-            System.out.println("Angka " + angka + " termasuk bilangan genap");
-        }
-        else {
-            System.out.println("Angka " + angka + " termasuk bilangan ganjil");
-        }
+        penentu_bilangan = (angka % 2 == 0) ? "bilangan genap" : "bilangan ganjil";
+        System.out.println("Angka " + angka + " termasuk " + penentu_bilangan);
+
+        // if (angka % 2 ==0){
+        //     System.out.println("Angka " + angka + " termasuk bilangan genap");
+        // }
+        // else {
+        //     System.out.println("Angka " + angka + " termasuk bilangan ganjil");
+        // }
     }
 }
