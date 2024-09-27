@@ -41,6 +41,9 @@ public class Kafe21 {
             case 'L':
                 totalHarga += 0.4 * totalHarga;
                 break;
+            default:
+                System.out.println("Size yang anda pilih tidak tersedia");
+
         }
 
         double diskon = keanggotaan ? 0.1 : 0;
@@ -48,5 +51,6 @@ public class Kafe21 {
 
         System.out.println("Item pembelian: " + jumlah + " " + menu + " dengan ukuran cup " + ukuranCup);
         System.out.println("Nominal bayar: " + nominalBayar);
+        
     }
 }
